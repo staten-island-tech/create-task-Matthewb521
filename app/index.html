@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap"
+      rel="stylesheet"
+    />
+    <title>Create Task</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div
+      id="page-header"
+      class="justify-items-center protest-guerrilla-regular h-[15vh]"
+    >
+      <h1 class="text-6xl">Workout Creator</h1>
+    </div>
+    <div id="form-container" class="">
+      <form action="/submit" method="POST">
+        <!-- Text Input -->
+        <label for="text-input">Chose Difficulty level of the Workout:</label>
+        <input type="text" id="text-input" name="text-input" required />
+
+        <!-- Dropdown Menu -->
+        <label for="options">What type of workout would you want:</label>
+        <select
+          id="options"
+          name="options[]"
+          class="select select-bordered w-full max-w-xs"
+        >
+          <option value="1">Chest</option>
+          <option value="2">Back</option>
+          <option value="3">Arms</option>
+          <option value="4">Legs</option>
+          <option value="5">Carido</option>
+          <option value="6">Shoulders</option>
+        </select>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script type="module" src="JS/main.js"></script>
+  </body>
+</html>
