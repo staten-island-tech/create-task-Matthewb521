@@ -16,35 +16,57 @@
   <body>
     <div
       id="page-header"
-      class="justify-items-center protest-guerrilla-regular h-[15vh]"
+      class="justify-items-center protest-guerrilla-regular h-[10vh]"
     >
       <h1 class="text-6xl">Workout Creator</h1>
     </div>
-    <div id="form-container" class="">
-      <form action="/submit" method="POST">
+    <div
+      id="form-container"
+      class="justify-items-center protest-guerrilla-regular h-[50vh]"
+    >
+      <form action="/submit" method="POST" class="space-y-4">
         <!-- Text Input -->
-        <label for="text-input">Chose Difficulty level of the Workout:</label>
-        <input type="text" id="text-input" name="text-input" required />
+        <label id="form-1" for="text-input" class="block text-xl">
+          Choose Difficulty level of the Workout:
+        </label>
+        <input
+          type="text"
+          id="text-input"
+          name="text-input"
+          class="block w-full border border-gray-300 rounded-md p-2"
+          required
+        />
 
         <!-- Dropdown Menu -->
-        <label for="options">What type of workout would you want:</label>
+        <label id="dropdown" for="options" class="block text-xl">
+          What type of workout would you want:
+        </label>
         <select
           id="options"
           name="options[]"
-          class="select select-bordered w-full max-w-xs"
+          class="block w-full border border-gray-300 rounded-md p-2"
         >
           <option value="1">Chest</option>
           <option value="2">Back</option>
           <option value="3">Arms</option>
           <option value="4">Legs</option>
-          <option value="5">Carido</option>
-          <option value="6">Shoulders</option>
+          <option value="5">Cardio</option>
         </select>
 
         <!-- Submit Button -->
-        <button type="submit">Submit</button>
+        <button
+          id="submit-btn"
+          type="submit"
+          class="block w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-md"
+        >
+          Submit
+        </button>
       </form>
     </div>
+    <div
+      id="card-container"
+      class="h-[50vh] flex flex-wrap gap-4 justify-center"
+    ></div>
     <script type="module" src="JS/main.js"></script>
   </body>
 </html>

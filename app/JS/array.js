@@ -1,4 +1,4 @@
-export const exercises = [
+const exercise = [
   // Chest Exercises (Difficulty 1-5)
   { name: "Incline Push-ups", difficulty: 1, bodyPart: "Chest", id: "45D" },
   { name: "Chest Fly", difficulty: 2, bodyPart: "Chest", id: "34C" },
@@ -10,7 +10,12 @@ export const exercises = [
   { name: "Pec Deck", difficulty: 3, bodyPart: "Chest", id: "67M" },
   { name: "Wide Grip Push-ups", difficulty: 4, bodyPart: "Chest", id: "34N" },
   { name: "Clap Push-ups", difficulty: 5, bodyPart: "Chest", id: "45K" },
-  { name: "Incline Dumbbell Press", difficulty: 4, bodyPart: "Chest", id: "23F" },
+  {
+    name: "Incline Dumbbell Press",
+    difficulty: 4,
+    bodyPart: "Chest",
+    id: "23F",
+  },
   { name: "Chest Dips", difficulty: 5, bodyPart: "Chest", id: "12L" },
   { name: "Machine Chest Press", difficulty: 3, bodyPart: "Chest", id: "89Q" },
   { name: "Diamond Push-ups", difficulty: 5, bodyPart: "Chest", id: "78R" },
@@ -26,7 +31,12 @@ export const exercises = [
   { name: "T-Bar Rows", difficulty: 4, bodyPart: "Back", id: "12U" },
   { name: "Good Mornings", difficulty: 3, bodyPart: "Back", id: "45L" },
   { name: "Seated Cable Rows", difficulty: 3, bodyPart: "Back", id: "90K" },
-  { name: "Single-arm Dumbbell Rows", difficulty: 4, bodyPart: "Back", id: "78S" },
+  {
+    name: "Single-arm Dumbbell Rows",
+    difficulty: 4,
+    bodyPart: "Back",
+    id: "78S",
+  },
   { name: "Inverted Rows", difficulty: 3, bodyPart: "Back", id: "56X" },
   { name: "Chin-ups", difficulty: 5, bodyPart: "Back", id: "34V" },
   { name: "Kettlebell Swings", difficulty: 4, bodyPart: "Back", id: "67Y" },
@@ -36,18 +46,43 @@ export const exercises = [
   // Arm Exercises (Difficulty 2-5)
   { name: "Bicep Curls", difficulty: 2, bodyPart: "Arms", id: "12K" },
   { name: "Hammer Curls", difficulty: 2, bodyPart: "Arms", id: "34M" },
-  { name: "Overhead Tricep Extensions", difficulty: 3, bodyPart: "Arms", id: "45N" },
+  {
+    name: "Overhead Tricep Extensions",
+    difficulty: 3,
+    bodyPart: "Arms",
+    id: "45N",
+  },
   { name: "Tricep Dips", difficulty: 3, bodyPart: "Arms", id: "23L" },
   { name: "Concentration Curls", difficulty: 4, bodyPart: "Arms", id: "56O" },
   { name: "Preacher Curls", difficulty: 3, bodyPart: "Arms", id: "78P" },
   { name: "Zottman Curls", difficulty: 3, bodyPart: "Arms", id: "12Q" },
-  { name: "Incline Dumbbell Curls", difficulty: 4, bodyPart: "Arms", id: "67A" },
-  { name: "Cable Tricep Pushdowns", difficulty: 2, bodyPart: "Arms", id: "90T" },
+  {
+    name: "Incline Dumbbell Curls",
+    difficulty: 4,
+    bodyPart: "Arms",
+    id: "67A",
+  },
+  {
+    name: "Cable Tricep Pushdowns",
+    difficulty: 2,
+    bodyPart: "Arms",
+    id: "90T",
+  },
   { name: "Skull Crushers", difficulty: 5, bodyPart: "Arms", id: "23U" },
   { name: "Reverse Curls", difficulty: 3, bodyPart: "Arms", id: "34V" },
-  { name: "Close Grip Bench Press", difficulty: 4, bodyPart: "Arms", id: "56W" },
+  {
+    name: "Close Grip Bench Press",
+    difficulty: 4,
+    bodyPart: "Arms",
+    id: "56W",
+  },
   { name: "Rope Hammer Curls", difficulty: 3, bodyPart: "Arms", id: "78X" },
-  { name: "Overhead Cable Extensions", difficulty: 3, bodyPart: "Arms", id: "45Y" },
+  {
+    name: "Overhead Cable Extensions",
+    difficulty: 3,
+    bodyPart: "Arms",
+    id: "45Y",
+  },
   { name: "Spider Curls", difficulty: 4, bodyPart: "Arms", id: "89Z" },
 
   // Leg Exercises (Difficulty 2-5)
@@ -57,7 +92,12 @@ export const exercises = [
   { name: "Leg Press", difficulty: 4, bodyPart: "Legs", id: "90S" },
   { name: "Deadlifts", difficulty: 5, bodyPart: "Legs", id: "89R" },
   { name: "Goblet Squats", difficulty: 3, bodyPart: "Legs", id: "23V" },
-  { name: "Bulgarian Split Squats", difficulty: 5, bodyPart: "Legs", id: "34X" },
+  {
+    name: "Bulgarian Split Squats",
+    difficulty: 5,
+    bodyPart: "Legs",
+    id: "34X",
+  },
   { name: "Calf Raises", difficulty: 2, bodyPart: "Legs", id: "45Y" },
   { name: "Glute Bridges", difficulty: 2, bodyPart: "Legs", id: "67Z" },
   { name: "Box Jumps", difficulty: 4, bodyPart: "Legs", id: "12U" },
@@ -83,3 +123,5 @@ export const exercises = [
   { name: "Rowing", difficulty: 5, bodyPart: "Cardio", id: "56A" },
   { name: "Swimming", difficulty: 4, bodyPart: "Cardio", id: "78G" },
 ];
+
+export { exercise };
