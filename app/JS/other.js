@@ -10,6 +10,8 @@ function printCardByDifficulty(difficulty) {
   exercisesToPrint.forEach((item) => {
     container.innerHTML += createCard(item);
   });
+  const container = document.getElementById("card-container");
+  container.innerHTML = filteredExercises.map(createCard).join("");
 }
 
 function printCardByBodyPart(bodyPart) {
