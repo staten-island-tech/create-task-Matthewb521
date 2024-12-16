@@ -17,13 +17,38 @@ function createCard(exercise) {
 }
 
 function printCard(difficulty, bodyPart) {
-  const filteredExercises = exercise.filter(
-    (item) =>
-      (difficulty ? item.difficulty == difficulty : true) &&
-      (bodyPart ? item.bodyPart == bodyPart : true)
-  );
+  const filteredExercises = [];
+
+  exercise.forEach((item) => {
+    let matchesDifficulty = true;
+    let matchesBodyPart = true;
+
+    if (difficulty) {
+      if (item.difficulty == difficulty) {
+        matchesDifficulty = true;
+      } else {
+        matchesDifficulty = false;
+      }
+    }
+
+    if (bodyPart) {
+      if (item.bodyPart == bodyPart) {
+        matchesBodyPart = true;
+      } else {
+        matchesBodyPart = false;
+      }
+    }
+
+    if (matchesDifficulty && matchesBodyPart) {
+      filteredExercises.push(item);
+    }
+  });
+
   const container = document.getElementById("card-container");
-  container.innerHTML = filteredExercises.map(createCard).join("");
+  container.innerHTML = "";
+  filteredExercises.forEach((exercise) => {
+    container.innerHTML += createCard(exercise);
+  });
 }
 
 form.addEventListener("submit", (event) => {
