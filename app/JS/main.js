@@ -1,7 +1,6 @@
 import "../style.css";
 import { exercise } from "./array";
 
-const container = document.getElementById("card-container");
 const textInput = document.getElementById("text-input");
 const dropdown = document.getElementById("options");
 const form = document.querySelector("#form-container form");
@@ -48,6 +47,7 @@ function printCard(difficulty, bodyPart) {
   container.innerHTML = "";
   filteredExercises.forEach((exercise) => {
     container.innerHTML += createCard(exercise);
+    console.log(exercise.name, exercise.bodyPart, exercise.id);
   });
 }
 
