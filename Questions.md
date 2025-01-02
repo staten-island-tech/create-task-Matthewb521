@@ -30,10 +30,46 @@ Programs accept input to achieve their intended functionality. **Describe at lea
 - If there are multiple parts to this question, write the part letter with your response.
 
 ```javascript
+function printCard(difficulty, bodyPart) {
+  const filteredExercises = [];
 
+  exercise.forEach((item) => {
+    let matchesDifficulty = true;
+    let matchesBodyPart = true;
+
+    if (difficulty) {
+      if (item.difficulty == difficulty) {
+        matchesDifficulty = true;
+      } else {
+        matchesDifficulty = false;
+      }
+    }
+
+    if (bodyPart) {
+      if (item.bodyPart == bodyPart) {
+        matchesBodyPart = true;
+      } else {
+        matchesBodyPart = false;
+      }
+    }
+
+    if (matchesDifficulty && matchesBodyPart) {
+      filteredExercises.push(item);
+    }
+  });
+
+  const container = document.getElementById("card-container");
+  container.innerHTML = "";
+  filteredExercises.forEach((exercise) => {
+    container.innerHTML += createCard(exercise);
+    console.log(exercise.name, exercise.bodyPart, exercise.id);
+  });
+}
 ```
 
-## The iput in this function is the array. The function takes this array(which is the item on the to do list)and creates a card with buttons and queryselectors.
+```
+Two valid inputs in this program are difficulty and bodypart. These two inputs are taken and then used to find exercises that have the same values for difficulty level and body part trained from the array, and create a workout plan with those exercies.
+```
 
 ### Question 2
 
@@ -44,7 +80,34 @@ Refer to your Personalized Project Reference when answering this question.
 Consider the first iteration statement included in the Procedure section of your Personalized Project Reference. **Describe what is being accomplished by the code in the body of the iteration statement.**
 
 ```javascript
+exercise.forEach((item) => {
+  let matchesDifficulty = true;
+  let matchesBodyPart = true;
 
+  if (difficulty) {
+    if (item.difficulty == difficulty) {
+      matchesDifficulty = true;
+    } else {
+      matchesDifficulty = false;
+    }
+  }
+
+  if (bodyPart) {
+    if (item.bodyPart == bodyPart) {
+      matchesBodyPart = true;
+    } else {
+      matchesBodyPart = false;
+    }
+  }
+
+  if (matchesDifficulty && matchesBodyPart) {
+    filteredExercises.push(item);
+  }
+});
+```
+
+```
+The iteration here is the forEach loop. The forEach looks through the array provided and then matches the difficulty level and body part trained from the inputs given in the function and findes exersies that fill both parameters.
 ```
 
 #### Part (b):
@@ -55,10 +118,14 @@ Consider the procedure identified in part (i) of the Procedure section of your P
 - Describe the expected behavior of each call. If it is not possible for two calls to your procedure to cause different code segments to execute, explain why this is the case for your procedure.
 
 ```javascript
+printCard(1, chest);
 
+printCard(1, back);
 ```
 
-the remove button here takes the event listener to the button to click and remove the item from the to do list. The addToDo function takes an input of an event and then creates a card out of it and pushes it to the screen.
+```
+The first call stated would run the code correctly and return all the exerices with a difficulty level of 1 that train the chest. However, for the second call since there are no exerices that match the two given parameters one of the paramters will return false and not print anything since no matches were found.
+```
 
 #### Part (c):
 
@@ -71,6 +138,14 @@ Using the list identified in the List section of your Personalized Project Refer
 
 - Write your responses to this question only on the designated pages in the separate Written Response booklet.
 - If there are multiple parts to this question, write the part letter with your response.
+
+```javascript
+
+```
+
+```
+
+```
 
 ---
 
