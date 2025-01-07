@@ -1,5 +1,4 @@
 const exercise = [
-  // Chest Exercises (Difficulty 1-5)
   { name: "Incline Push-ups", difficulty: 1, bodyPart: "Chest", id: "45D" },
   { name: "Chest Fly", difficulty: 2, bodyPart: "Chest", id: "34C" },
   { name: "Push-ups", difficulty: 3, bodyPart: "Chest", id: "12A" },
@@ -21,7 +20,6 @@ const exercise = [
   { name: "Diamond Push-ups", difficulty: 5, bodyPart: "Chest", id: "78R" },
   { name: "Archer Push-ups", difficulty: 5, bodyPart: "Chest", id: "56Z" },
 
-  // Back Exercises (Difficulty 2-5)
   { name: "Superman Exercise", difficulty: 2, bodyPart: "Back", id: "90I" },
   { name: "Bent-over Rows", difficulty: 3, bodyPart: "Back", id: "78G" },
   { name: "Reverse Fly", difficulty: 3, bodyPart: "Back", id: "01J" },
@@ -43,7 +41,6 @@ const exercise = [
   { name: "Landmine Rows", difficulty: 4, bodyPart: "Back", id: "23W" },
   { name: "Barbell Shrugs", difficulty: 3, bodyPart: "Back", id: "12R" },
 
-  // Arm Exercises (Difficulty 2-5)
   { name: "Bicep Curls", difficulty: 2, bodyPart: "Arms", id: "12K" },
   { name: "Hammer Curls", difficulty: 2, bodyPart: "Arms", id: "34M" },
   {
@@ -85,7 +82,6 @@ const exercise = [
   },
   { name: "Spider Curls", difficulty: 4, bodyPart: "Arms", id: "89Z" },
 
-  // Leg Exercises (Difficulty 2-5)
   { name: "Squats", difficulty: 2, bodyPart: "Legs", id: "67P" },
   { name: "Lunges", difficulty: 3, bodyPart: "Legs", id: "78Q" },
   { name: "Step-Ups", difficulty: 3, bodyPart: "Legs", id: "01T" },
@@ -107,7 +103,6 @@ const exercise = [
   { name: "Sumo Deadlifts", difficulty: 4, bodyPart: "Legs", id: "12R" },
   { name: "Wall Sits", difficulty: 2, bodyPart: "Legs", id: "34A" },
 
-  // Cardio Exercises (Difficulty 1-5)
   { name: "Jumping Jacks", difficulty: 1, bodyPart: "Cardio", id: "23V" },
   { name: "High Knees", difficulty: 2, bodyPart: "Cardio", id: "34W" },
   { name: "Mountain Climbers", difficulty: 3, bodyPart: "Cardio", id: "45X" },
